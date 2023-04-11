@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "8755fa92-1f7d-434b-90bd-ca6d8ac0d308",
+		"name": "JMFL Propelled test collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22126159"
+	},
+	"item": [
+		{
+			"name": "Loan Booking API",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jAlgXUUIVaXE35spZ6nsqZSnaZiblnbCW6axQUGoXzLnxrEz7ikkorMHD7CRM4nolpeFXad6sCoUhvlku4iPhmSkvE5PQ73TrUajSqX1lIgBWshkKZEkOnyy3Sbm634P",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "oLbMooQE7JKuD1dq5jAZcuWd4fy8b3Oi1RrxXju3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"kyc\": [\r\n    {\r\n      \"address\": \"S / O : Kamlesh Singh , house no. , soniya nagar , ward no.40 , Raigarh , Aadhaar-Aam  Chhattisgarh - 496001, , , , 496001\",\r\n      \"kyc_name\": \"KAMLESH SINGH\",\r\n      \"kyc_type\": 1,\r\n      \"identifier\": \"5528\",\r\n      \"is_verified\": true,\r\n      \"verified_using\": 1\r\n    },\r\n    {\r\n      \"kyc_name\": \"AKASH SINGH\",\r\n      \"kyc_type\": 2,\r\n      \"identifier\": \"EKBPS9937R\",\r\n      \"is_verified\": true,\r\n      \"verified_using\": 1\r\n    }\r\n  ],\r\n  \"email\": \"akashsingh@propelld.com\",\r\n  \"gender\": 1,\r\n  \"source\": \"Propelld-Test\",\r\n  \"address\": \"S/O KAMLESH SINGH, WARD NO 40, SONIYA NAGAR, 23RD MAIN ROAD, Raigarh, 496001\",\r\n  \"form_id\": \"loan_booking_form\",\r\n  \"pincode\": \"496001\",\r\n  \"full_name\": \"AKASH SINGH\",\r\n  \"loan_type\": 1,\r\n  \"execute_bre\": false,\r\n  \"loan_amount\": 300000,\r\n  \"loan_tenure\": 12,\r\n  \"monthly_emi\": 28750,\r\n  \"bank_account\": {\r\n    \"ac_name\": \"AKASH SINGH\",\r\n    \"ac_number\": \"026291800001193\",\r\n    \"ifsc_code\": \"YESB0000262\"\r\n  },\r\n  \"company_name\": \"AA\",\r\n  \"credit_score\": 800,\r\n  \"fathers_name\": \"KAMLESH SINGH\",\r\n  \"mothers_name\": \"Mother Name Not Present\",\r\n  \"date_of_birth\": \"03-Apr-1993\",\r\n  \"interest_rate\": \"26.62\",\r\n  \"mobile_number\": \"9620486246\",\r\n  \"agreement_date\": \"21-Mar-2023\",\r\n  \"emi_start_date\": \"05-Apr-2023\",\r\n  \"monthly_income\": 200000,\r\n  \"employment_type\": 1,\r\n  \"partner_loan_id\": \"onefin_12\",\r\n  \"repayment_count\": 12,\r\n  \"disbursal_detail\": [\r\n    {\r\n      \"gst\": 0,\r\n      \"date\": \"21-Mar-2023\",\r\n      \"amount\": 300000,\r\n      \"pre_emi\": 0,\r\n      \"insurance\": 0,\r\n      \"subvention\": 0,\r\n      \"downpayment\": 0,\r\n      \"upfront_emi\": 0,\r\n      \"disbursal_type\": 0,\r\n      \"processing_fee\": 0,\r\n      \"subvention_gst\": 0\r\n    }\r\n  ],\r\n  \"institute_detail\": {\r\n    \"brand_name\": \"Test Automation ULP\",\r\n    \"course_name\": \"Test Automation Course ULP\",\r\n    \"bank_account\": {\r\n      \"ac_name\": \"Automation Test Institute\",\r\n      \"ac_number\": \"123123123123\",\r\n      \"ifsc_code\": \"ICIC0000558\"\r\n    },\r\n    \"legal_entity_name\": \"Automation Test Institute\"\r\n  },\r\n  \"payment_frequency\": 3,\r\n  \"repayment_schedule\": null,\r\n  \"additional_variables\": {\r\n    \"emi_start_date\": \"05-Apr-2023\",\r\n    \"processing_fee\": 0,\r\n    \"no_of_advance_emis\": 0\r\n  },\r\n  \"loan_application_date\": \"21-Mar-2023\",\r\n  \"agreement_signature_type\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jmfin2-uat.onefin.in/api/v1/client/loan/",
+					"protocol": "https",
+					"host": [
+						"jmfin2-uat",
+						"onefin",
+						"in"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"loan",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "N2zfRYaXXxiLitjZAcykIWmfIeFiUObJZJ8gqkX1G8MsRlwZPsEmUdP3MlwraEUWyYpbotNpcUAmK8Gi7PgG8oCGNqSwJy28tkpQnugKE4yNDFetCUy4vCA7zhnbPNe8",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "IdX1eDARmBrZ5zDlqJsADc10Htq01bGESxn7O7LF",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tenant",
+			"value": "financepeer-uat",
+			"type": "string"
+		},
+		{
+			"key": "lead_id",
+			"value": "bee10879-2e01-490b-bde5-f008bad25d6e",
+			"type": "string"
+		}
+	]
+}
